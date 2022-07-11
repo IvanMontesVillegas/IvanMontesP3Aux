@@ -3,13 +3,16 @@ import './App.module.scss';
 import BaseLayout from "./components/BaseLayout";
 import {BrowserRouter} from "react-router-dom";
 
-function App() {
+function App({backgroundColor, ...props}) {
+   
    return (
-      <div >
-         <BrowserRouter>
-            <BaseLayout/>
-         </BrowserRouter>
-      </div>
+      <>
+         <div>
+            <BrowserRouter>
+               <BaseLayout/>
+            </BrowserRouter>
+         </div>
+      </>
    );
 }
 
